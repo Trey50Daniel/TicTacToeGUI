@@ -63,5 +63,14 @@ public class BoardDisplay {
 			b.updateBoard();
 			b.showBoard();
 		}
+		if(b.t.checkWinner() == TicTacToe.positionState.O) {
+			System.out.println("The winner is O!");
+		}
+		else if(b.t.checkWinner() == TicTacToe.positionState.X) {
+			System.out.println("The winner is X!");
+		}
+		else {
+			System.out.println("The game ended in a tie!");
+		}
 	}
 }
